@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=DBHelper
+comment0.text=\r\n\ Esta\ classe\ DBHelper\ e\ responsavel\ pelo\ acesso\ \u00E0\ base\ de\ dados\ rui\ que\ consulta\ uma\ tabela\ de\ nome\:\ pessoa.\r\n\ Usa\ como\ ponte\ de\ ligacao\ a\ base\ de\ dados\:\ jdbc\ E\ PRECISA\ DA\ DEPENDENCIA\:\ "Jconnector.jar"\ ESTE\ FICHEIRO\ ".jar"\r\n\ (Tamb\u00E9m\ conhecido\ como\ Java-ARtefacto\ ->\ JAR\ )\ PRECISA\ DE\ ESTAR\r\n\ INCLUIDO\ na\ Variavel\ %CLASSPATH%\ (Windows)\ ou\ $CLASSPATH\ (Linux)\ @see\ {@link\ "https\://www.geeksforgeeks.org/import-statement-in-java/"\ }\r\n\ <p>\r\n\ Se\ nao\ for\ incluido\ dara\ \#ClassNotFoundException\r\n\ <p>\r\n\ O\ servico\ do\ MySQL\ deve\ estar\ iniciado,\ senao\ dara\ \#Exception\ (erro)\ que\ nao\ obteve\ resposta.\r\n\ (enviou\ pacotes\ de\ dados,\ mas\ nao\ recebeu\ nenhum)\r\n\ <p>\r\n\ Ao\ nivel\ da\ camada\ TCP\ de\ rede\:\ se\ a\ porta\ 3306\ (porta\ do\ servico\ do\ Mysql)\ nao\ estiver\ "aberta"\ \r\n\ ao\ longo\ do\ routeamento\ da\ rede,\ deve\ correr\ esta\ classe\ no\ mesmo\ Endereco\ IP,\ do\ Motor\ de\ Base\ de\ Dados\ MySQL\ \r\n\ e\ substituir\ na\ (URL)\ da\ Base\ de\ Dados\ o\ nome\ da\ M\u00E1quina\ "ruin"\ por\ "localhost"\ que\ e\ a\ refer\u00EAncia\ a\ maquina\ local\ (loopback)\r\n\ evitando\ assim\ "excepcoes"\ provenientes\ de\ portas\ bloqueadas\ na\ rede.\r\n\ <p>\r\n\ A\ autenticacao\ tambem\ e\ susceptivel\ de\ dar\ \#Exception\ (erro\ -\ "Access\ Denied"),\ portanto\ deve\ certificar-se\ de\ que\:\r\n\ \ \ \ \ \ 1)\ Na\ consola\ de\ administracao\ do\ motor\ do\ MySQL,\ (MySQL\ WorkBench\ ou\ phpMyAdmin\ no\ caso\ do\ XAMPP)\r\n\ \ \ \ \ \ \ \ \ \ Certificar-se\ que\ o\ "username"\ tem\ ACESSO\ e\ PERMISSAO\ para\ EXECUTAR\ a\ instrucao\ SQL\ em\ questao.\r\n\ \ \ \ \ \ \ \ \ \ Neste\ caso\:\ "select\ apelido,datanasc,foto,morada,nome,numero\ from\ pessoa;"\r\n\ \ \ \ \ \ 2)\ E\ a\ "senha"\ do\ username\ fornecida\ a\ esta\ classe\ esta\ religiosamente\ bem\ escrita.\r\n\ \ \ \ \ \ 3)\ Nesta\ classe\ deve\ adaptar\ a\ propriedade\ \#user\ e\ a\ propriedade\ \#pass,\ conforme\ a\ autenticacao\ que\ definiu\ na\ consola\ do\ phpMyAdmin.\r\n\ \ \ \ \ \ \r\n\ @author\ (Ruin\ Mantel\ Die\ Oliver\ Prier)\ \r\n\ @version\ (3.0)\r\n
+comment1.params=
+comment1.target=DBHelper()
+comment2.params=tabela
+comment2.target=java.sql.DatabaseMetaData\ getMetaData(java.lang.String)
+comment2.text=\r\n\ @deprecated\r\n\ Retorno\ de\ MetaDados\ da\ Base\ de\ dados.\r\n\ <p>\r\n\ @param\ \ \ tabela\ \ \ \ \ \ \ \ \ \ \ \ \ \ {@link\ \#bd}\r\n\ @return\ \ DatabaseMetaData\ \ \ \ {@link\ \#liga}\r\n
+comment3.params=
+comment3.target=java.util.ArrayList\ queryPessoa()
+comment3.text=\r\n\ GETTER\ \u2014\ este\ metodo\ vai\ \u00E0\ tabela\ de\ pessoa\ fazer\ uma\ consulta\ (SELECT)\ carregar\ os\ seus\ dados\ para\ um\ CURSOR\ e\ transferi-los\ para\ uma\ lista\ din\u00E2mica\ de\ pessoas\r\n\ @see\ \#PessoaS\ (Array\ dinamico)\r\n\ <p>\r\n\ @return\ \#{@link\ \#PessoaS\ }\r\n
+comment4.params=p
+comment4.target=boolean\ inserePessoa(Pessoa)
+comment5.params=p
+comment5.target=boolean\ delPessoa(Pessoa)
+comment6.params=p
+comment6.target=boolean\ updPessoa(Pessoa)
+comment7.params=
+comment7.target=void\ fechar()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+comment8.text=\r\n\ @deprecated\r\n\ Metodo\ que\ e\ usado\ apenas\ para\ testar\ esta\ classe\ de\ acesso\ \u00E0\ base\ de\ dados\ (antes\ de\ usar\ a\ classe\ AplicaBD)\r\n
+numComments=9
