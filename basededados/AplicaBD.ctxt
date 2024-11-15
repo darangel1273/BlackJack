@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=AplicaBD
+comment0.text=\r\n\ Exemplo\ de\ Aplicacao\ em\ Java,\ para\ criar\ uma\ \#moldura\ (JFrame)\r\n\ e\ testar\ o\ acesso\ \u00E0\ base\ de\ dados\ mysql\ @see\ \#db\ \#DBHelper\r\n\ se\ a\ ligacao\ for\ bem-sucedida\ carrega\ os\ registos\ da\ tabela\ pessoa\ para\ o\ ArrayList<basededados.Pessoa>\ com\ o\ nome\:\ \#PessoaS\r\n\r\n\ @author\ Ruin\ Prier\r\n\ @version\ 4.0\r\n
+comment1.params=
+comment1.target=AplicaBD()
+comment1.text=\r\n\ Metodo\ construtor\ para\ instanciar\ e\ construir\ em\ mem\u00F3ria,\ as\ propriedades\ desta\ classe.\r\n
+comment2.params=
+comment2.target=void\ construirJanela()
+comment3.params=
+comment3.target=void\ carregaForm()
+comment4.params=
+comment4.target=void\ refresh()
+comment4.text=\r\n\ Recarrega\ o\ array\ PessoaS\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment5.text=\r\n\ @see\ \#AplicaBD\r\n\ @deprecated\ Metodo\ para\ testar\ o\ acesso\ \u00E0\ base\ de\ dados\ do\ mysql\ e\ criar\ a\ JFrame\ \#moldura\r\n
+numComments=6

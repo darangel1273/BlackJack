@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Contacto
+comment0.text=\r\n\ SubClasse\ Contacto\ que\ tem\ como\ SuperClasse\ Pessoa.\r\n\ @see\ basededados.Pessoa;\r\n\ \r\n\ @author\ (Ruin\ Mantel\ Die\ Oliver\ Prier)\ \r\n\ @version\ (1.0)\r\n
+comment1.params=apelido\ dataNasc\ foto\ morada\ nome\ numero\ telemovel\ email
+comment1.target=Contacto(java.lang.String,\ java.sql.Date,\ java.sql.Blob,\ java.lang.String,\ java.lang.String,\ double,\ double,\ java.lang.String)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Contacto\r\n
+comment2.params=telemovel
+comment2.target=void\ setTelemovel(java.lang.Double)
+comment2.text=\r\n\ M\u00E9todo\ (Procedimento)\ para\ ENCAPSULAR\ o\ n\u00FAmero\ de\ telem\u00F3vel\ (SETTER).\r\n\ @param\ \ telemovel\ \ \ Par\u00E2metro\ telem\u00F3vel\ a\ ser\ "encapsulado".\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ n\u00E3o\ tem\ retorno.\ (Void\ -\ Vazio).\r\n
+comment3.params=email
+comment3.target=void\ setEmail(java.lang.String)
+comment3.text=\r\n\ M\u00E9todo\ (Procedimento)\ para\ ENCAPSULAR\ o\ Email\ do\ Contacto\ (SETTER).\r\n\ @param\ \ \ email\ \ \ \ \ \ \ Par\u00E2metro\ email\ a\ ser\ "encapsulado".\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ n\u00E3o\ tem\ retorno.\ (Void\ -\ Vazio).\r\n
+comment4.params=
+comment4.target=double\ getTlm()
+comment4.text=\r\n\ M\u00E9todo\ (Fun\u00E7\u00E3o)\ para\ extrair\ o\ Telem\u00F3vel\ do\ ENCAPSULAMENTO\ da\ Classe\ Contacto\ (GETTER)\r\n\ @param\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ M\u00E9todo\ sem\ par\u00E2metros.\r\n\ @return\ \ Tlm\ \ \ \ \ \ \ \ \ Retorna\ o\ Atributo\ Tlm\ da\ Classe.\r\n
+comment5.params=
+comment5.target=java.lang.String\ getEmail()
+comment5.text=\r\n\ M\u00E9todo\ (Fun\u00E7\u00E3o)\ para\ extrair\ o\ Email\ do\ ENCAPSULAMENTO\ da\ Classe\ Contacto\ (GETTER)\r\n\ @param\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ M\u00E9todo\ sem\ par\u00E2metros.\r\n\ @return\ \ Email\ \ \ \ \ \ \ Retorna\ o\ Atributo\ Email\ da\ Classe.\r\n
+numComments=6
