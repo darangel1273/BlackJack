@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MicrosoftAcess
+comment0.text=\r\n\ Esta\ classe\ MicrosoftAcess\ est\u00E1\ num\ pacote\ separado\ e\ \u00E9\ uma\ alternativa\ \u00E0\ Classe\ DBHelper\ do\ pacote\ "basededados"\ \r\n\ serve\ para\ aceder\ a\ uma\ base\ de\ dados\ em\ Microsoft\ Acess\ do\ Microsoft\ Office.\ \r\n\ N\u00E3o\ precisa\ de\ ter\ refer\u00EAncia\ no\ CLASSPATH,\ o\ "Jconnector-mysql.jar"\ ou\ de\ ter\ esta\ dependencia\ carregada.\r\n\ <p>\r\n\ ESTE\ PACOTE\ DEPENDE\ DA\ CLASSE\ PESSOA\ DO\ PACOTE\ "basededados"\ @see\ \#basededados\r\n\ Esta\ classe\ IMPORTA\ o\ pacote\ o\ pacote\ basededados\ pois\ precisa\ da\ classe\ Pessoa,\ para\ criar\ o\ mesmo\ ArrayList<Pessoa>\ PessoaS,\r\n\ no\ entanto\ o\ controlador\ que\ vem\ substituir\ o\ "odbc\ data\ source"\ do\ Windows,\ precisa\ de\ outras\ dependencias\ \r\n\ que\ necessitam\ de\ ser\ carregadas\ como\ blibliotecas\ ou\ refer\u00EAnciadas\ no\ (\ CLASSPATH\ )\:\r\n\ 1)\ ./ucanaccess-5.0.1.jar\r\n\ 2)\ ./lib/commons-lang3-3.8.1.jar\r\n\ 3)\ ./lib/commons-logging-1.2.jar\r\n\ 4)\ ./lib/hsqldb-2.5.0.jar\r\n\ 5)\ ./lib/jackcess-3.0.1.jar\r\n\ \r\n\ A\ base\ de\ dados\ \u00C9\ LOCAL\ \:\ Ex\:\ "c\:/pis20.accdb"\ (\ Logo\ evita\ Excep\u00E7\u00F5es\ de\ Rede\ )\ e\ cont\u00E9m\ uma\ tabela\ "pessoa"\r\n\ \r\n\ @author\ (\ Ruin\ Mantel\ Die\ Oliver\ Prier\ )\ \r\n\ @version\ (2.0)\r\n
+comment1.params=
+comment1.target=MicrosoftAcess()
+comment1.text=\r\n\ Construtor\ que\ carrega\ os\ controladores\ JDBC\ para\ o\ Microsoft\ Acess\ (contidos\ nos\ 5\ ficheiros\ jar\ mencionados\ acima)\r\n\ \r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ queryPessoa()
+comment2.text=\r\n\ M\u00E9todo\ que\ executa\ uma\ consulta\ SQL\ \u00E0\ tabela\ de\ "pessoa"\ e\ retorna\ uma\ grelha\ de\ resultados\ ->\ CURSOR\ ou\ ResultSet\r\n\ cont\u00E9m\ um\ ciclo\ que\ percorre\ cada\ um\ dos\ registos\ de\ \#Pessoa\ carregados\ da\ tabela\ pessoa\ na\ BD\ e\ "enche"\ um\ Array\ Din\u00E2mico\r\n\ (ArrayList<Pessoa>)\ com\ o\ nome\ "\#PessoaS"\ Para\ testar\ o\ carregamento\ de\ imagens,\ foi\ criado\ um\ painel\ para\ cada\ indice\ \r\n\ do\ Array\ de\ Pessoas\r\n
+comment3.params=
+comment3.target=void\ fechar()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=\r\n\ Metodo\ para\ executar\ a\ consulta\ SQL\ a\ tabela\ de\ pessoa\ na\ base\ de\ dados\ pis20.accdb\r\n
+numComments=5
